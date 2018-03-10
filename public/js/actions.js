@@ -1,6 +1,10 @@
 $("document").ready(function() {
 	let socket = io();
 	let uname = "";
+	// Set initial cookies
+	document.cookie = "uid=; path=/;";
+	document.cookie = "uname=; path=/;";
+	document.cookie = "ucolour=; path=/;";
 	
 	// Handle sending the message
 	$("form").submit(function() {

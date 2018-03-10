@@ -20,7 +20,7 @@ let processor = function(io) {
 			colour: null
 		}
 		
-		if (userCookie["uid"] === "undefined" && userCookie["uname"] === "undefined") {
+		if (userCookie["uid"] === null || userCookie["uid"] === "undefined" || userCookie["uid"] === "") {
 			// Create a new user
 			userObj.uname 	= generate.first({nationality:"en"});
 			userObj.uid 	= generate.string({length:8});
@@ -31,7 +31,7 @@ let processor = function(io) {
 			userObj.uid 	= userCookie["uid"];
 			userObj.colour 	= userCookie["ucolour"];
 		}
-			
+	
 		// Add user to online user list	
 		var userIndex = users.map(function(user) { return user.uname; }).indexOf(userObj.uname);
 		if (userIndex == -1) {
@@ -47,7 +47,10 @@ let processor = function(io) {
 		jsonMsg = JSON.stringify({type:"username", data: userObj});
 		socket.emit("init", jsonMsg);
 		// Broadcast the new user list to be updated
-		io.emit("update users", JSON.stringify(users));		
+		io.emit("update users", JSON.stringify(users));	
+
+
+		console.log(userCookie);
 		
 		
 		// Handle subsequence messages after
