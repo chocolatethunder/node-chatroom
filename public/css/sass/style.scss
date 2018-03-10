@@ -3,20 +3,27 @@
 body {
 	margin:0;
 	padding:0;
+	font-family: 'Roboto', sans-serif;
+	border:0;
 }
 
 #userStatus {
-	height:5vh;
+	height:4vh;
+	padding:10px;
+	border:0;
+	font-size:2.6vh;
 }
 
 #msgDisplay {
 	display:block;
-	width:75%;
-	border:2px solid #666666;
+	width:80%;
+	border:0;
 	margin:0;
 	padding:0;
 	height:90vh;
 	position:relative;
+	background-color:#F1F1F1;
+	min-width:400px;
 }
 
 #messages {
@@ -39,12 +46,12 @@ li.userbold {
 }
 
 #messages li:nth-child(odd) { 
-	background: #eee; 
+	background: #F9F9F9; 
 }
 
 #userDisplay {
-	width:24%;
-	border:2px solid #CCCCCC;
+	width:20%;
+	border:0;
 	float:right;
 	margin:0;
 	padding:0;
@@ -56,6 +63,7 @@ li.userbold {
 	margin:0; 
 	padding:0;
 	width:100%;
+	overflow:auto;
 }
 
 #users li { 
@@ -64,17 +72,28 @@ li.userbold {
 
 form {
 	#msg {
-		width:74%;
+		width:79%;
 		margin:0;
-		height:3.5vh;
-		font-size:2.0vw;
+		height:4vh;
+		font-size:2.0vh;
 		padding:0 0 0 10px;
-		border:0;
+		border:none;
+		outline:none;
+		background-color:#708090;
+		color:#FFFFFF;
 	}
+	
+	#msg::-webkit-input-placeholder {
+		color:#FFFFFF;
+	}
+	
 	#send {
-		width:24%;
-		height:4.5vh;
-		font-size:3.0vw;
+		width:20%;
+		height:4vh;
+		font-size:2.0vh;
 		margin:0;
+		padding:0;
+		outline:none;
+		boder:none;
 	}
 }
