@@ -4,17 +4,13 @@ Node.js client built using:
 - Jade
 - Socket.io
 
-This code was built with the help of this
-tutorial https://socket.io/get-started/chat/
-Some parts of the code may match.
+This code was built with the help of this tutorial https://socket.io/get-started/chat/
 
 ## How to Run ##
 
 #### Clone the repository 
 ```
 npm install
-```
-```
 npm run start
 ```
 
@@ -23,3 +19,4 @@ npm run start
 npm run devstart
 ```
 
+Point your browser to http://localhost:9000
