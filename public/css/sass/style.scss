@@ -1,0 +1,80 @@
+/* SASS Script */
+
+body {
+	margin:0;
+	padding:0;
+}
+
+#userStatus {
+	height:5vh;
+}
+
+#msgDisplay {
+	display:block;
+	width:75%;
+	border:2px solid #666666;
+	margin:0;
+	padding:0;
+	height:90vh;
+	position:relative;
+}
+
+#messages {
+	list-style-type: none; 
+	margin:0; 
+	padding:0;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	overflow:hidden;
+}
+
+#messages li { 
+	padding: 5px 10px; 
+}
+
+li.userbold { 
+	font-weight:600;
+}
+
+#messages li:nth-child(odd) { 
+	background: #eee; 
+}
+
+#userDisplay {
+	width:24%;
+	border:2px solid #CCCCCC;
+	float:right;
+	margin:0;
+	padding:0;
+	height:90vh;
+}
+
+#users {
+	list-style-type: none; 
+	margin:0; 
+	padding:0;
+	width:100%;
+}
+
+#users li { 
+	padding: 5px 10px; 
+}
+
+form {
+	#msg {
+		width:74%;
+		margin:0;
+		height:3.5vh;
+		font-size:2.0vw;
+		padding:0 0 0 10px;
+		border:0;
+	}
+	#send {
+		width:24%;
+		height:4.5vh;
+		font-size:3.0vw;
+		margin:0;
+	}
+}

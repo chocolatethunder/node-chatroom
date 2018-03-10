@@ -1,0 +1,27 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "A simple chat room application demonstrating the capabilities of socket.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".git"
+  },
+  "author": "Saurabh Tomar",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.0.13",
+    "express": "^4.16.2",
+    "jade": "^1.11.0",
+    "node-sass": "^4.7.2",
+    "socket.io": "^2.0.4",
+    "socket.io-cookie-parser": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
+}

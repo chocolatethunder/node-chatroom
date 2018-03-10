@@ -1,0 +1,18 @@
+doctype 
+html
+	head
+		title Chaterio!
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+		script(src="/js/actions.js")
+		link(rel="stylesheet", type="text/css", href="/css/style.min.css")
+	body
+		div(id="userStatus")
+		div(id="userDisplay")
+			ul(id="users")
+		div(id="msgDisplay")
+			ul(id="messages")
+		div(id="inputDisplay")
+			form(action="")
+				input(type="text", id="msg", autocomplete="off", placeholder="Enter message") 
+				input(type="submit", id="send")
