@@ -103,7 +103,7 @@ $("document").ready(function() {
 	
 	// Handle receiving the message
 	socket.on("chat message", function(message) {
-		let flag = false;
+		
 		let msgData = JSON.parse(message);
 		let date = new Date(msgData.data.time);
 		let timestamp = ("0" + date.getHours()).slice(-2) + ":" + ("0" + date.getMinutes()).slice(-2) + ":" + ("0" + date.getSeconds()).slice(-2);
@@ -124,6 +124,8 @@ $("document").ready(function() {
 function appendMessages(msgs) {
 	// Append the message
 	$("#messages").append(msgs);
+	
+	let flag = false;
 	
 	// Resize the message display height
 	if( $("#messages").prop("scrollHeight") >= $("#msgDisplay").prop("scrollHeight") && flag !== true) {
