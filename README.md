@@ -8,8 +8,10 @@ This code was built with the help of this tutorial https://socket.io/get-started
 
 ## How to Run ##
 
-#### Clone the repository 
+#### Clone the repository and npm run
 ```
+git clone https://github.com/chocolatethunder/node-chatroom.git
+cd node-chatroom
 npm install
 npm run start
 ```
