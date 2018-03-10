@@ -48,9 +48,6 @@ let processor = function(io) {
 		socket.emit("init", jsonMsg);
 		// Broadcast the new user list to be updated
 		io.emit("update users", JSON.stringify(users));	
-
-
-		console.log(userCookie);
 		
 		
 		// Handle subsequence messages after
